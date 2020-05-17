@@ -10,6 +10,7 @@ curl -sL https://github.com/php/php-src/archive/php-7.3.18.tar.gz | tar -xvz
 mkdir php7
 cd php-src-php-7.3.18
 ./buildconf --force
+# --prefix=/home/ec2-user/builds/php7/ for ec2
 ./configure --prefix=/home/ec2-user/environment/builds/php7/ --with-openssl=/usr/local/ssl --with-curl --with-zlib
 # --enable-mbstring \
 # --with-xmlrpc \

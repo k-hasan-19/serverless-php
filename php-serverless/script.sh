@@ -1,3 +1,5 @@
+mkdir ./bin
+cp ../builds/php7/bin/php ./bin/
 chmod +x ./bootstrap
 curl -sS https://getcomposer.org/installer | ./bin/php
 ./bin/php composer.phar require guzzlehttp/guzzle

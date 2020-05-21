@@ -11,7 +11,7 @@ mkdir php7
 cd php-src-php-7.3.18
 ./buildconf --force
 # --prefix=/home/ec2-user/builds/php7/ for ec2
-./configure --prefix=/home/ec2-user/environment/builds/php7/ --with-openssl=/usr/local/ssl --with-curl --with-zlib
+./configure --prefix=/home/ec2-user/environment/builds/php7/ --with-openssl=/usr/local/ssl --with-curl --with-zlib --with-mysqli
 # --enable-mbstring \
 # --with-xmlrpc \
 # --enable-soap \
@@ -19,12 +19,10 @@ cd php-src-php-7.3.18
 # --with-gd \
 # --with-jpeg-dir \
 # --with-png-dir \
-# --with-mysqli \
 # --with-pgsql \
 # --enable-embedded-mysqli \
 # --with-freetype-dir \
 # --with-ldap \
 # --enable-intl \
-# --with-mysqlnd \
 # --with-xsl
 make install
